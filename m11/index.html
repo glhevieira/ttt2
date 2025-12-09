@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module de Facturation GSB</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+
+    <div class="invoice-container">
+        <header>
+            <div class="company-info">
+                <h1>Nom de la compagnie</h1>
+                <p>Adresse postale</p>
+                <p>Détails du contact</p>
+            </div>
+            <div class="invoice-title">
+                <h2>FACTURE</h2>
+                <div class="date-field">
+                    <input type="date" value="2023-01-26">
+                </div>
+                <div class="invoice-number">
+                    <label>N° de facture : </label>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+        </header>
+
+        <section class="client-info">
+            <div class="destinataire">
+                <h3>Destinataire</h3>
+                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Nom de la société">
+                <input type="text" placeholder="Adresse postale">
+                <input type="text" placeholder="Téléphone">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="envoyez-a">
+                <p><em>Conditions de paiement, par exemple : dû dans X jours</em></p>
+                <h3>Envoyez à</h3>
+                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Nom de la société">
+                <input type="text" placeholder="Adresse postale">
+                <input type="text" placeholder="Téléphone">
+                <input type="email" placeholder="Email">
+            </div>
+        </section>
+
+        <table id="table_inv">
+            <thead>
+                <tr>
+                    <th class="th-desc">DESCRIPTION</th>
+                    <th class="th-qte">QUANTITÉ</th>
+                    <th class="th-prix">PRIX UNITAIRE</th>
+                    <th class="th-total">TOTAL</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                <tr class="row" id="modeleLigne">
+                    <td><input type="text" name="desc" class="input desc" value="desc1"></td> <td><input type="number" name="qte" class="input qte" value="0"></td> <td><input type="number" name="prix" class="input prix" value="0"></td> <td><input type="text" name="total" class="input totalLigne" readonly value="0.00"></td>
+                </tr>
+                
+                <tr class="row lastrow" id="lastLigne">
+                   <td colspan="4" style="border:none;">Remarques, notes et instructions de paiement</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="totals-section">
+            <div class="totals-grid">
+                <label>SOUS-TOTAL</label>
+                <input type="text" id="sousTotal" readonly value="0.00">
+
+                <label>REMISE (Taux 0.XX)</label>
+                <input type="number" id="remise" step="0.01" value="0.10"> <label>SOUS-TOTAL MOINS LES REMISES</label>
+                <input type="text" id="sousTotalRemise" readonly value="0.00">
+
+                <label>TAUX D'IMPOSITION (Taux 0.XX)</label>
+                <input type="number" id="tauxImpot" step="0.01" value="0.10"> <label>TAXE TOTALE</label>
+                <input type="text" id="taxeTotale" readonly value="0.00">
+
+                <label>EXPEDITION, MANUTENTION</label>
+                <input type="number" id="fraisExp" value="5.00">
+
+                <label class="grand-total-label">SOLDE DU</label>
+                <div class="grand-total-box">
+                    <input type="text" id="soldeDu" readonly value="0.00€">
+                </div>
+            </div>
+        </section>
+
+        <div class="actions">
+            <button type="button" onclick="calculate()">Calculer</button> <button type="button" onclick="ajouterLigne()">Ajouter une ligne</button> <button type="button" onclick="remplir()">Remplir automatiquement</button> <button type="button" onclick="window.location.reload()">Annuler</button>
+        </div>
+    </div>
+
+    <script src="m11.js"></script>
+</body>
+</html>

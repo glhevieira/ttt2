@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>QCM - Plateforme d'autoformation</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+
+<div class="container">
+
+    <div class="header-bloc">
+        <p class="bts-sio">BTS SIO Lycée Parc de Vilgénis</p>
+    </div>
+
+    <p class="intro-qcm">Questionnaire sous forme de QCM. Les questions peuvent comporter une ou plusieurs bonnes réponses.</p>
+
+    <form id="qcm">
+
+        <div class="question-bloc">
+            <p class="question-title">Question 1: <span class="question-text">Quel langage sert à structurer une page web ?</span></p>
+            <label><input type="radio" name="q1" value="HTML"> HTML</label>
+            <label><input type="radio" name="q1" value="CSS"> CSS</label>
+        </div>
+
+        <div class="question-bloc">
+            <p class="question-title">Question 2: <span class="question-text">Quels langages sont utilisés côté client ? (choix multiples)</span></p>
+            <label><input type="checkbox" name="q2" value="HTML"> HTML</label>
+            <label><input type="checkbox" name="q2" value="JS"> JavaScript</label>
+            <label><input type="checkbox" name="q2" value="PHP"> PHP</label>
+        </div>
+
+        <div class="question-bloc">
+            <p class="question-title">Question 3: <span class="question-text">Quel langage permet de styliser une page web ?</span></p>
+            <label><input type="radio" name="q3" value="CSS"> CSS</label>
+            <label><input type="radio" name="q3" value="HTML"> HTML</label>
+        </div>
+
+        <div class="question-bloc">
+            <p class="question-title">Question 4: <span class="question-text">Quel langage permet d'ajouter des interactions ?</span></p>
+            <label><input type="radio" name="q4" value="JS"> JavaScript</label>
+            <label><input type="radio" name="q4" value="CSS"> CSS</label>
+        </div>
+
+        <div class="question-bloc">
+            <p class="question-title">Question 5: <span class="question-text">Quels logiciels sont des navigateurs web ? (choix multiples)</span></p>
+            <label><input type="checkbox" name="q5" value="Chrome"> Google Chrome</label>
+            <label><input type="checkbox" name="q5" value="Firefox"> Mozilla Firefox</label>
+            <label><input type="checkbox" name="q5" value="Word"> Microsoft Word</label>
+        </div>
+
+        <div class="question-bloc">
+            <p class="question-title">Question 6: <span class="question-text">Que signifie « CSS » ?</span></p>
+            <label><input type="radio" name="q6" value="C"> Cascading Style Sheets</label>
+            <label><input type="radio" name="q6" value="F"> Computer Style System</label>
+        </div>
+
+        <div class="question-bloc">
+            <p class="question-title">Question 7: <span class="question-text">Quel langage est exécuté côté serveur ?</span></p>
+            <label><input type="radio" name="q7" value="PHP"> PHP</label>
+            <label><input type="radio" name="q7" value="JS"> JavaScript</label>
+        </div>
+
+        <div class="question-bloc">
+            <p class="question-title">Question 8: <span class="question-text">Quelle balise permet d’insérer une image ?</span></p>
+            <label><input type="radio" name="q8" value="img"> &lt;img&gt;</label>
+            <label><input type="radio" name="q8" value="image"> &lt;image&gt;</label>
+        </div>
+
+        <div class="question-bloc">
+            <p class="question-title">Question 9: <span class="question-text">Que permet Git ?</span></p>
+            <label><input type="radio" name="q9" value="Version"> Gestion de version</label>
+            <label><input type="radio" name="q9" value="Jeu"> Lancer des jeux</label>
+        </div>
+
+        <div class="question-bloc">
+            <p class="question-title">Question 10: <span class="question-text">Quels sont des systèmes d’exploitation ? (choix multiple)</span></p>
+            <label><input type="checkbox" name="q10" value="Windows"> Windows</label>
+            <label><input type="checkbox" name="q10" value="Linux"> Linux</label>
+            <label><input type="checkbox" name="q10" value="Excel"> Excel</label>
+        </div>
+
+        <div class="btns">
+            <button type="button" onclick="testqcm()">Correction</button>
+            <button type="button" onclick="ouvrirCorrige()">Corrigé</button>
+            <button type="button" onclick="document.getElementById('qcm').reset()">Effacer</button>
+        </div>
+
+        <div id="resultat"></div>
+
+    </form>
+</div>
+
+<script src="Q.js"></script>
+</body>
+</html>

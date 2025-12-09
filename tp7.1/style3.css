@@ -1,0 +1,27 @@
+.block1{
+
+    background-color: rgb(1, 255, 13);
+    float:  left;
+    height: 300px;
+    width: 400px;
+    margin: 10px;
+
+}
+.block2{
+
+    background-color: rgb(1, 255, 13);
+     margin-left: 20px;
+    float:  right;
+    height: 300px;
+    width: 400px;
+    margin: 10px;
+}
+.block3{
+
+    background-color: rgb(1, 255, 13);
+     margin-left: 20px;
+    float:  both;
+    height: 300px;
+    width: 400px;
+    margin: 10px;
+}

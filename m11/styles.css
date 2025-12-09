@@ -1,0 +1,140 @@
+/* Guilherme VIEIRA ABREU */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.invoice-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ade6d0; 
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #140085; 
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.invoice-title {
+    text-align: right;
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px 0;
+}
+
+/* Sections Clients */
+.client-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.client-info input {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+th {
+    background-color: #008000;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Largeurs spécifiques  */
+.th-desc { width: 50%; }
+.th-qte { width: 15%; text-align: right; }
+.th-prix { width: 15%; text-align: right; }
+.th-total { width: 20%; text-align: right; }
+
+td {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+/* Style des inputs dans le tableau */
+.input {
+    width: 95%;
+    border: none;
+    text-align: right;
+}
+.input.desc {
+    text-align: left;
+}
+
+/* Lignes paires grisées comme sur la maquette */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Section Totaux */
+.totals-section {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.totals-grid {
+    display: grid;
+    grid-template-columns: 200px 100px;
+    gap: 5px;
+    align-items: center;
+}
+
+.totals-grid input {
+    text-align: right;
+    border: none;
+    background: transparent;
+}
+
+.grand-total-label {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.grand-total-box input {
+    background-color: #ff0026; 
+    font-weight: bold;
+    color: black;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+/* Boutons */
+.actions {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+}

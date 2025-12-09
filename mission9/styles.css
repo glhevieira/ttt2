@@ -1,0 +1,155 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #eef3f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    max-width: 800px; /* Augmenté pour la maquette */
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px; /* Légèrement ajusté */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1); /* Ombre légère */
+}
+
+.header-bloc {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.bts-sio {
+    color: #a020f0; 
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.intro-qcm {
+    color: #38a169; 
+    font-weight: bold;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+/* Styles pour les questions */
+.question-bloc {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-left: 3px solid #ccc;
+    padding-left: 15px;
+}
+
+.question-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #234;
+    margin: 0 0 10px 0;
+}
+
+.question-text {
+    font-weight: normal;
+    color: #444;
+}
+
+.question-bloc label {
+    display: block;
+    margin: 4px 0;
+    padding-left: 5px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Styles des boutons */
+.btns {
+    margin-top: 30px;
+    text-align: right;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.btns button {
+    background: #2e5aac;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.9em;
+}
+
+.btns button:hover {
+    background: #1d3f7a;
+}
+
+/* Affichage du score */
+#resultat {
+    background: #f0f7ff;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #cce5ff;
+    border-radius: 4px;
+    color: #004085;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* --- Style pour la fenêtre de corrigé  --- */
+.corrige-body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #fff;
+}
+
+.corrige-header {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.corrige-title {
+    color: #a020f0; 
+    font-weight: bold;
+    margin: 0;
+}
+
+.indication {
+    color: #e53e3e; 
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+
+.corrige-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.corrige-question {
+    margin-bottom: 15px;
+}
+
+.corrige-answer {
+    margin: 5px 0 5px 15px;
+}
+
+.correct-answer {
+    color: #e53e3e; /* Bonne réponse en rouge */
+    font-weight: bold;
+}
+
+.btn-fermer {
+    text-align: right;
+    margin-top: 40px;
+}
+
+.btn-fermer button {
+    background: #2e5aac;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Tableau de Facture</title>
+    <link rel="stylesheet" href="fiche.css">
+  <script src="fiche.js"></script>
+</head>
+<body>
+  <h2>Tableau de Facture</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Article</th>
+        <th>Quantité</th>
+        <th>Prix (€)</th>
+        <th>Résultat (€)</th>
+      </tr>
+    </thead>
+    <tbody id="factureBody">
+      <tr>
+        <td><input type="text" id="t1" value=""></td>
+        <td><input type="number" id="t2" value=""></td>
+        <td><input type="number" id="t3" value=""></td>
+        <td><input type="text" id="resultat" readonly></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="t1" value=""></td>
+        <td><input type="number" id="t2" value=""></td>
+        <td><input type="number" id="t3" value=""></td>
+        <td><input type="text" id="resultat" readonly></td>
+      </tr>
+
+            <tr>
+        <td><input type="text" id="t1" value=""></td>
+        <td><input type="number" id="t2" value=""></td>
+        <td><input type="number" id="t3" value=""></td>
+        <td><input type="text" id="resultat" readonly></td>
+      </tr>
+
+            <tr>
+        <td><input type="text" id="t1" value=""></td>
+        <td><input type="number" id="t2" value=""></td>
+        <td><input type="number" id="t3" value=""></td>
+        <td><input type="text" id="resultat" readonly></td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+  <div>
+    <button onclick="reset()">Réinitialiser</button>
+    <button onclick="multiplication()">Résultat</button>
+  </div>
+
+  <div id="total"></div>
+
+  
+  <script src="fiche.js"></script>
+</body>
+</html>

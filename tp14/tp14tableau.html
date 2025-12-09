@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tp14.js"></script>
+</head>
+<body>
+    <h2>Tableau Dynamique</h2>
+
+    Nom : <br>
+    <input type="text" placeholder="Nom" name="nom" id="nom"><br>
+    Prénom : <br>
+    <input type="text" placeholder="Prenom" name="prenom" id="prenom"><br>
+    Age : <br>
+    <input type="text" placeholder="Age" name="age" id="age">
+    <br>
+    <br>
+
+    <table id="matable">
+        <tr>
+            <td>Nom</td>
+            <td>Prénom</td>
+            <td>Age</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Jean</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>Marie</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <button class="boutonadd" onclick="ajouterligne()">Ajouter une ligne</button>
+</body>
+</html>
